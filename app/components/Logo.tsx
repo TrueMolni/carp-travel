@@ -1,31 +1,23 @@
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-// import logo from "../images/CarpTravelLogo.svg";
-// import logo from "../images/CarpTravelLogoPng.png";
+import { karantina } from "./shared/fonts";
 
 const Logo = () => {
-  //   console.log(logo);
   return (
-    <Link className="flex" href={"/"}>
+    <Link
+      className="inline-flex flex-col gap-0.5 items-start text-accent-500"
+      href={"/"}
+    >
       <Image src={"/Frame.svg"} alt="Logo" width={61} height={33} />
-      <span className="text-[#fff]">CarpTravel</span>
+      <span
+        className={`${karantina.className} text-sm 
+        leading-[14px] font-normal tracking-[2.59px]`}
+      >
+        CarpTravel
+      </span>
     </Link>
   );
 };
 
 export default Logo;
-/* 
-color: #FFF;
-
-leading-trim: both;
-
-text-edge: cap;
-font-family: Karantina;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 2.59px;
-*/
