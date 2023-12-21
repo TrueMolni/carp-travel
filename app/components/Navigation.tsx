@@ -1,28 +1,26 @@
 import React from "react";
 import Logo from "./Logo";
-isImportTypeAssertionContainer;
-import { isImportTypeAssertionContainer } from "typescript";
+import LinkBtn from "./shared/LinkBtn";
 
 const Navigation = () => {
   return (
     <nav>
       <Logo />
-
-      <ul>
+      <ul className="inline-flex flex-col justify-center items-center gap-12">
         <li>
-          <a href="#">About</a>
+          <LinkBtn textref="#" text={"About"} />
         </li>
         <li>
-          <a href="#">Services</a>
+          <LinkBtn textref="#" text={"Services"} customClass={""} />
         </li>
         <li>
-          <a href="#">Career</a>
+          <LinkBtn textref="#" text={"Career"} customClass={""} />
         </li>
         <li>
-          <a href="#">Gallery</a>
+          <LinkBtn textref="#" text={"Gallery"} customClass={""} />
         </li>
         <li>
-          <a href="#">Contacts</a>
+          <LinkBtn textref="#" text={"Contacts"} customClass={""} />
         </li>
       </ul>
     </nav>
@@ -30,3 +28,9 @@ const Navigation = () => {
 };
 
 export default Navigation;
+/*
+
+justify-content: center;
+align-items: center;
+gap: 48px;
+*/
