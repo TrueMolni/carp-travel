@@ -30,3 +30,66 @@ const Navigation = () => {
 };
 
 export default Navigation;
+/*
+import React from 'react';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+
+const Header = () => {
+  const scrollToSection = (sectionId) => {
+    scroller.scrollTo(sectionId, {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart',
+    });
+  };
+
+  return (
+    <header>
+      <div className="logo">Logo</div>
+      <nav>
+        <ul>
+          <li>
+            <Link
+              to="section1"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              onClick={() => scrollToSection('section1')}
+            >
+              Section 1
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="section2"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              onClick={() => scrollToSection('section2')}
+            >
+              Section 2
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="section3"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              onClick={() => scrollToSection('section3')}
+            >
+              Section 3
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;
+
+*/
