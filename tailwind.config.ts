@@ -34,6 +34,7 @@ const config: Config = {
     },
     screens: {
       mm: { max: "767px" },
+      tm: { max: "1279px" },
     },
   },
   plugins: [],

@@ -1,26 +1,28 @@
 import React from "react";
-import Logo from "./Logo";
+
 import LinkBtn from "./shared/LinkBtn";
 
 const Navigation = () => {
   return (
     <nav>
-      <Logo />
-      <ul className="inline-flex flex-col justify-center items-center gap-12">
+      <ul
+        className="inline-flex mm:flex-col mm:justify-center mm:items-center mm:gap-12 
+      tm:justify-end items-start tm:gap-6 gap-14 "
+      >
         <li>
-          <LinkBtn textref="#" text={"About"} />
+          <LinkBtn textref="#about" text={"About"} />
         </li>
         <li>
-          <LinkBtn textref="#" text={"Services"} customClass={""} />
+          <LinkBtn textref="#services" text={"Services"} customClass={""} />
         </li>
         <li>
-          <LinkBtn textref="#" text={"Career"} customClass={""} />
+          <LinkBtn textref="#career" text={"Career"} customClass={""} />
         </li>
         <li>
-          <LinkBtn textref="#" text={"Gallery"} customClass={""} />
+          <LinkBtn textref="#gallery" text={"Gallery"} customClass={""} />
         </li>
         <li>
-          <LinkBtn textref="#" text={"Contacts"} customClass={""} />
+          <LinkBtn textref="#contacts" text={"Contacts"} customClass={""} />
         </li>
       </ul>
     </nav>
@@ -28,9 +30,3 @@ const Navigation = () => {
 };
 
 export default Navigation;
-/*
-
-justify-content: center;
-align-items: center;
-gap: 48px;
-*/
