@@ -20,9 +20,3 @@ const LinkBtn = ({ textref, text, customClass }: LinkProps) => {
 };
 
 export default LinkBtn;
-/*
-About
-
-
-letter-spacing: 1.8px;
-*/
