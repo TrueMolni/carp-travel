@@ -10,19 +10,19 @@ const Navigation = () => {
       tm:justify-end items-start tm:gap-6 gap-14 "
       >
         <li>
-          <LinkBtn textref="#about" text={"About"} />
+          <LinkBtn textref="#about" customClass={""} text={"About"} />
         </li>
         <li>
-          <LinkBtn textref="#services" text={"Services"} customClass={""} />
+          <LinkBtn textref="#services" customClass={""} text={"Services"} />
         </li>
         <li>
-          <LinkBtn textref="#career" text={"Career"} customClass={""} />
+          <LinkBtn textref="#career" customClass={""} text={"Career"} />
         </li>
         <li>
-          <LinkBtn textref="#gallery" text={"Gallery"} customClass={""} />
+          <LinkBtn textref="#gallery" customClass={""} text={"Gallery"} />
         </li>
         <li>
-          <LinkBtn textref="#contacts" text={"Contacts"} customClass={""} />
+          <LinkBtn textref="#contacts" customClass={""} text={"Contacts"} />
         </li>
       </ul>
     </nav>
