@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     colors: {
       accent: { 500: "#FFF" },
-      high: { 500: "#FF2B77" },
+      error: { 500: "#FF5757" },
       medium: { 500: "#E2A300" },
       low: { 500: "6BD475" },
       divider: { 500: "#ACA7C3" },
