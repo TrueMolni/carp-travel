@@ -38,6 +38,7 @@ const config: Config = {
     screens: {
       mm: { max: "767px" },
       tm: { max: "1279px" },
+      tablet: { min: "768px", max: "1279px" },
     },
   },
   plugins: [],

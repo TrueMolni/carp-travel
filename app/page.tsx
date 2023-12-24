@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import Form from "./components/shared/Form/Form";
+import Carrer from "./components/Carrer";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
         <section className="bg-text-500 h-screen" id="about"></section>
         <section className="bg-text-500 h-screen" id="services"></section>
         <section className="bg-text-500 h-screen" id="career">
-          <Form />
+          <Carrer />
         </section>
         <section className="bg-text-500 h-screen" id="gallery"></section>
         <section className="bg-text-500 h-screen" id="contacts"></section>

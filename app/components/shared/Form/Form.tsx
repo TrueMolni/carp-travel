@@ -3,8 +3,7 @@
 import React from "react";
 import { FieldValues, useForm } from "react-hook-form";
 import Label from "./Label";
-import Input from "./Input";
-import Checkbox from "./Checkbox";
+import Button from "../Button";
 
 type FormData = {
   fullName: string;
@@ -80,17 +79,17 @@ const Form = () => {
           })}
         />
         {errors.position && (
-          <p className="text-error-500">{`${errors.phone.message}`}</p>
+          <p className="text-error-500">{`${errors?.phone?.message}`}</p>
         )}
       </Label>
 
       <Label text="Message">
         <textarea
           className="text-accent-500 tm:text-[13px] text-[20px] leading-[24px] tracking-[1.8px] font-extralight bg-[#FFFFFF0D] 
-          text-justify min-w-[279px] min-h-[196px]"
+          text-justify min-w-[279px] min-h-[196px] resize-none"
           {...register("message", {})}
         />
-        {errors.position && (
+        {errors.message && (
           <p className="text-error-500">{`${errors?.message?.message}`}</p>
         )}
       </Label>
@@ -107,9 +106,7 @@ const Form = () => {
         )}
       </label>
 
-      <button type="submit" disabled={isSubmitting}>
-        Submit
-      </button>
+      <Button disabled={isSubmitting} customStyles="self-end" text="SEND" />
     </form>
   );
 };
