@@ -9,7 +9,7 @@ export default function Home() {
         <section className="bg-text-500 h-screen" id="about"></section>
         <section className="bg-text-500 h-screen" id="services"></section>
         <section
-          className="mm:bg-none bg-career-tm bg-center bg-contain"
+          className="flex flex-col mm:bg-none bg-career-tm bg-center mm:p-0 px-[32px] py-[64px]"
           id="career"
         >
           <Carrer />
