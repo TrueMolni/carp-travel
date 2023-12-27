@@ -23,8 +23,14 @@ const config: Config = {
       base: "px-4 py-2 bg-blue-500 text-white rounded-md",
     },
     backgroundImage: {
-      "wave-pattern": "url('/src/shared/images/bg/bg-wave.png')",
-      "wave-texture": "url('/src/shared/images/bg/bg-wave.svg')",
+      "career-mm":
+        "linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),url('images/career-bg.png')",
+      "career-tm":
+        "linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),url('images/career-tablet-bg.png')",
+      custom: "linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75))",
+    },
+    backgroundColor: {
+      black75: "rgba(2, 15, 8, 0.75)",
     },
     fontFamily: {
       header: "Alata, sans-serif",
@@ -41,6 +47,6 @@ const config: Config = {
       tablet: { min: "768px", max: "1279px" },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };
 export default config;
