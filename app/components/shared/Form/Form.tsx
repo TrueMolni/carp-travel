@@ -2,6 +2,7 @@
 
 import React from "react";
 import { FieldValues, useForm } from "react-hook-form";
+import { RxCross1 } from "react-icons/rx";
 import Label from "./Label";
 import Button from "../Button";
 
@@ -14,6 +15,21 @@ type FormData = {
   message: string;
 };
 
+import Notiflix from "notiflix";
+import { log } from "console";
+
+Notiflix.Notify.init({
+  position: "right-top",
+  distance: "5px",
+
+  clickToClose: true,
+  timeout: 2500,
+});
+
+//  Notiflix.Notify.success(
+//    `You have ${watchedArr.length} films in your library "${keyName}"!`
+//  );
+
 const Form = () => {
   const {
     register,
@@ -21,17 +37,37 @@ const Form = () => {
     formState: { errors, isSubmitting },
     reset,
     getValues,
+    watch,
   } = useForm<FormData>();
 
+  const policyChecked = watch("policy");
+
   const submitHandler = (data: FieldValues) => {
+    Notiflix.Notify.success(`here is your data!`);
     console.log(data);
     reset();
   };
 
+  const handleFormSubmit = () => {
+    // Перевірка чекбокса "policy"
+    if (!policyChecked) {
+      Notiflix.Notify.failure(
+        "You must agree to the processing of personal data"
+      );
+      return;
+    }
+
+    // Викликати функцію submitHandler, якщо чекбокс відмічений
+    handleSubmit(submitHandler)();
+  };
+
   return (
     <form
-      onSubmit={handleSubmit(submitHandler)}
-      className="flex flex-col items-start justify-start"
+      onSubmit={(e) => {
+        e.preventDefault(); // Уникнути автоматичної відправки форми
+        handleFormSubmit();
+      }}
+      className="flex flex-col items-start justify-start gap-4"
     >
       <Label text="FullName">
         <input
@@ -42,7 +78,10 @@ const Form = () => {
           })}
         />
         {errors.fullName && (
-          <p className="text-error-500">{`${errors.fullName.message}`}</p>
+          <div className="text-[12px] font-extralight leading-6 tracking-[2.4px] flex text-error-500 items-center justify-end gap-1 mb-[-16px]">
+            <RxCross1 />
+            <p> {`${errors.fullName.message}`}</p>
+          </div>
         )}
       </Label>
       <Label text="E-mail">
@@ -55,19 +94,27 @@ const Form = () => {
           })}
         />
         {errors.email && (
-          <p className="text-error-500">{`${errors.email.message}`}</p>
+          <div className="text-[12px] font-extralight leading-6 tracking-[2.4px] flex text-error-500 items-center justify-end gap-1 mb-[-16px]">
+            <RxCross1 />
+            <p className="text-error-500">{`${errors.email.message}`}</p>
+          </div>
         )}
       </Label>
       <Label text="Position">
         <input
           placeholder="Movie maker"
-          className="text-accent-500 tm:text-[13px] text-[20px] leading-[24px] tracking-[1.8px] font-extralight bg-[#FFFFFF0D] text-justify"
+          className="text-accent-500 tm:text-[13px] text-[20px] 
+          leading-[24px] tracking-[1.8px] font-extralight 
+          bg-[#FFFFFF0D] text-justify "
           {...register("position", {
             required: "Position is required",
           })}
         />
         {errors.position && (
-          <p className="text-error-500">{`${errors.position.message}`}</p>
+          <div className="text-[12px] font-extralight leading-6 tracking-[2.4px] flex text-error-500 items-center justify-end gap-1 mb-[-16px]">
+            <RxCross1 />
+            <p className="text-error-500">{`${errors.position.message}`}</p>
+          </div>
         )}
       </Label>
       <Label text="Phone">
@@ -79,7 +126,10 @@ const Form = () => {
           })}
         />
         {errors.position && (
-          <p className="text-error-500">{`${errors?.phone?.message}`}</p>
+          <div className="text-[12px] font-extralight leading-6 tracking-[2.4px] flex text-error-500 items-center justify-end gap-1 mb-[-16px]">
+            <RxCross1 />
+            <p className="text-error-500">{`${errors?.phone?.message}`}</p>
+          </div>
         )}
       </Label>
 
@@ -90,7 +140,10 @@ const Form = () => {
           {...register("message", {})}
         />
         {errors.message && (
-          <p className="text-error-500">{`${errors?.message?.message}`}</p>
+          <div className="text-[12px] font-extralight leading-6 tracking-[2.4px] flex text-error-500 items-center justify-end gap-1 mb-[-16px]">
+            <RxCross1 />
+            <p className="text-error-500">{`${errors?.message?.message}`}</p>
+          </div>
         )}
       </Label>
       <label className="text-accent-500 text-xs leading-[24px] font-extralight tracking-default gap-2 min-w-[280px] flex flex-row-reverse">
@@ -101,9 +154,12 @@ const Form = () => {
             required: "Policy is required",
           })}
         />
-        {errors.policy && (
-          <p className="text-error-500">{`${errors.policy.message}`}</p>
-        )}
+        {/* {errors.policy && (
+          <div className="text-[12px] font-extralight leading-6 tracking-[2.4px] flex text-error-500 items-center justify-end gap-1">
+            <RxCross1 />
+            <p className="text-error-500">{`${errors.policy.message}`}</p>
+          </div>
+        )} */}
       </label>
 
       <Button disabled={isSubmitting} customStyles="self-end" text="SEND" />

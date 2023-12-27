@@ -19,10 +19,10 @@ const Carrer = () => {
           <Title
             title="Why us ?"
             size="h3"
-            customClass="mm:text-start text-right mt-6"
+            customClass="mm:text-start text-right mm:mt-9"
           />
         </div>
-        <List data={data} customListStyle="mt-6" />
+        <List data={data} customListStyle="mm:mt-9" />
       </div>
       <div className="mm:h-[826px] mm:px-[20px] mm:py-[56px] mm:bg-career-mm mm:bg-cover mm:bg-center mm:bg-no-repeat">
         <div className="w-[179px] ml-auto">
