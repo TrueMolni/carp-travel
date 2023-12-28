@@ -149,7 +149,7 @@ const Form = () => {
           )}
         </Label>
       </div>
-      <label className="text-accent-500 text-xs leading-[24px] tablet:leading-[22px] font-extralight mm:tracking-default gap-2 mm:min-w-[280px] tablet:w-[222px] flex flex-row-reverse">
+      <label className="text-accent-500 text-xs leading-[22px] tablet:leading-[22px] font-extralight gap-2 mm:min-w-[280px] tablet:w-[222px] flex flex-row-reverse">
         I confirm my consent to the processing of personal data.
         <input
           type="checkbox"

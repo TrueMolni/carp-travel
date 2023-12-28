@@ -11,39 +11,46 @@ const Carrer = () => {
   return (
     <>
       <div
-        className="mm:px-[20px] mm:py-[56px] mm:h-[800px] mm:bg-career-mm mm:bg-cover mm:bg-center mm:bg-no-repeat mm:block hidden 
-      "
+        className="mm:px-[20px] mm:py-[56px] mm:h-[800px] mm:bg-career-mm mm:bg-cover 
+        mm:bg-center mm:bg-no-repeat mm:block hidden"
       >
-        <Title
-          title="Choose"
-          size="h2"
-          customClass="tablet:text-justify mm:mb-6 tablet:min-w-[368px]"
-        >
-          <Span text=" US" />
-        </Title>
+        <div className="max-w-[480px] mx-auto">
+          <Title
+            title="Choose"
+            size="h2"
+            customClass="tablet:text-justify mm:mb-6 tablet:min-w-[368px]"
+          >
+            <Span text=" US" />
+          </Title>
 
-        <Text
-          customStyle="w-[179px] ml-auto mm:block tm:inline-block tm:ml-[115px]"
-          text="Your chance to join our passionate team in Carpathian tourism. Seeking talented professionals to share our common mission."
-        />
-        <Title
-          title="Why us ?"
-          size="h3"
-          customClass="mm:text-start text-right mm:mt-9 w-[179px] ml-auto"
-        />
+          <Text
+            customStyle="w-[179px] ml-auto mm:block tm:inline-block tm:ml-[115px]"
+            text="Your chance to join our passionate team in Carpathian tourism. Seeking talented professionals to share our common mission."
+          />
+          <Title
+            title="Why us ?"
+            size="h3"
+            customClass="mm:text-start text-right mm:mt-9 w-[179px] ml-auto"
+          />
 
-        <List data={data} customListStyle="mm:mt-9" />
+          <List data={data} customListStyle="mm:mt-9" />
+        </div>
       </div>
 
-      <div className="mm:block hidden mm:h-[826px] mm:px-[20px] mm:py-[56px] mm:bg-career-mm mm:bg-cover mm:bg-center mm:bg-no-repeat">
-        <div className="w-[179px] ml-auto">
-          <Text
-            text="Don't miss your opportunity!
+      <div
+        className="mm:block hidden mm:h-[826px] mm:px-[20px] mm:py-[56px] mm:bg-career-mm 
+      mm:bg-cover mm:bg-center mm:bg-no-repeat"
+      >
+        <div className="max-w-[480px] mx-auto">
+          <div className="w-[179px] ml-auto">
+            <Text
+              text="Don't miss your opportunity!
           Fill out the form right now
           and join our team!"
-          />
+            />
+          </div>
+          <Form />
         </div>
-        <Form />
       </div>
 
       {/*  */}
@@ -70,7 +77,10 @@ const Carrer = () => {
             <List data={data} customListStyle="tablet:gap-6" />
           </div>
 
-          <div className="mm:h-[826px] mm:px-[20px] mm:py-[56px] mm:bg-career-mm mm:bg-cover mm:bg-center mm:bg-no-repeat">
+          <div
+            className="mm:h-[826px] mm:px-[20px] mm:py-[56px] mm:bg-career-mm mm:bg-cover 
+          mm:bg-center mm:bg-no-repeat"
+          >
             <div className="mm:w-[179px] mm:ml-auto tablet:w-[188px] tablet:mb-8">
               <Text
                 customStyle="tablet:mt-[92px]"
