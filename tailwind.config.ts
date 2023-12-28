@@ -45,6 +45,7 @@ const config: Config = {
       mm: { max: "767px" },
       tm: { max: "1279px" },
       tablet: { min: "768px", max: "1279px" },
+      desk: { min: "1280px" },
     },
   },
   plugins: [require("@tailwindcss/aspect-ratio")],

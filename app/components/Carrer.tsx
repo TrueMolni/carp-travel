@@ -11,8 +11,8 @@ const Carrer = () => {
   return (
     <>
       <div
-        className="mm:px-[20px] mm:py-[56px] mm:h-[800px] mm:bg-career-mm mm:bg-cover mm:bg-center mm:bg-no-repeat 
-      mm:inline-block hidden"
+        className="mm:px-[20px] mm:py-[56px] mm:h-[800px] mm:bg-career-mm mm:bg-cover mm:bg-center mm:bg-no-repeat mm:block hidden 
+      "
       >
         <Title
           title="Choose"
@@ -45,9 +45,10 @@ const Carrer = () => {
         </div>
         <Form />
       </div>
+
       {/*  */}
 
-      <div>
+      <div className="mm:hidden">
         <div className="mm:hidden flex tablet:mb-[5px] tablet:justify-between">
           <Title
             title="Choose"
@@ -62,8 +63,8 @@ const Carrer = () => {
             text="Your chance to join our passionate team in Carpathian tourism. Seeking talented professionals to share our common mission."
           />
         </div>
-        <div className="flex">
-          <div className="flex flex-col mr-[20px]">
+        <div className="mm:hidden flex">
+          <div className="mm:hidden flex flex-col mr-[20px]">
             <Title title="Why us ?" size="h3" customClass=" text-right mb-14" />
 
             <List data={data} customListStyle="tablet:gap-6" />
