@@ -24,7 +24,7 @@ const Carrer = () => {
           </Title>
 
           <Text
-            customStyle="w-[179px] ml-auto mm:block tm:inline-block tm:ml-[115px]"
+            customStyle="w-[179px] ml-auto text-accent-500 mm:text-sm tablet:text-[13px] text-[18px] tm:leading-5 leading-6 font-extralight mm:text-start text-justify mm:block tm:inline-block tm:ml-[115px]"
             text="Your chance to join our passionate team in Carpathian tourism. Seeking talented professionals to share our common mission."
           />
           <Title
