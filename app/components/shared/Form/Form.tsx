@@ -5,7 +5,7 @@ import { FieldValues, useForm } from "react-hook-form";
 import Notiflix from "notiflix";
 import { RxCross1 } from "react-icons/rx";
 import Label from "./Label";
-import Button from "../Button";
+import SubmitBtn from "../submitBtn";
 
 type FormData = {
   fullName: string;
@@ -157,7 +157,11 @@ const Form = () => {
             )}
           </Label>
 
-          <Button disabled={isSubmitting} customStyles="self-end" text="SEND" />
+          <SubmitBtn
+            disabled={isSubmitting}
+            customStyles="self-end"
+            text="SEND"
+          />
         </div>
       </div>
     </form>

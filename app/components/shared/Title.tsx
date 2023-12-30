@@ -11,7 +11,9 @@ const Title = ({
   customClass?: string;
   children?: React.ReactNode;
 }) => {
-  const mainTitleStyles = "";
+  const mainTitleStyles =
+    "uppercase text-accent-500 font-thin mm:text-[40px] mm:leading-[56px] mm:tracking-[-1.6px] tablet:text-[67px] tablet:leading-[81px] tablet:tracking-[-2.68px] desk:text-[98px] desk:leading-[119px] desk:tracking-[-3.92px]";
+
   const secondaryTitleStyles =
     "uppercase text-accent-500 tablet:text-[67px] mm:text-[40px] text-8xl mm:leading-[56px] tablet:leading-[81px] leading-[119px] font-thin mm:tracking-[-1.6px] tablet:tracking-[-2.68px] tracking-[-3.92px]";
   const subTitleStyles =

@@ -1,20 +1,16 @@
-import React from "react";
-
-type submitBtn = {
-  text: string;
-  disabled: boolean;
-  customStyles: string;
+type ButtonProps = {
+  text: String;
+  customClass?: String;
 };
 
-const Button = ({ text, disabled, customStyles }: submitBtn) => {
-  const btnStyles =
-    "text-accent-500 text-center tm:text-3xl text-[32px] leading-[39px] font-medium";
+const Button = ({ text, customClass }: ButtonProps) => {
+  const btnClass =
+    "text-accent-500 mm:text-[14px] mm:tracking-[1.4px] mm:font-normal mm:uppercase";
+
   return (
     <button
-      aria-label="Submit"
-      className={!customStyles ? btnStyles : customStyles + " " + btnStyles}
-      disabled={disabled}
-      type="submit"
+      type="button"
+      className={!customClass ? btnClass : btnClass + " " + customClass}
     >
       {text}
     </button>

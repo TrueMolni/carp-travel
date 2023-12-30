@@ -28,9 +28,22 @@ const config: Config = {
       "career-tm":
         "linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),url('images/career-tablet-bg.png')",
       custom: "linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75))",
+      "hero-mm":
+        "linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('images/bg-hero-mobile.png')",
+      "hero-tm":
+        "linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('images/bg-hero-tablet.png')",
+      "hero-dm":
+        "linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('images/bg-hero-desktop.png')",
     },
     backgroundColor: {
       black75: "rgba(2, 15, 8, 0.75)",
+    },
+    linearGradientColors: {
+      "header-mm": [
+        "to-b",
+        "rgba(2, 15, 8, 0.75) 0%",
+        "rgba(2, 15, 8, 0.75) 100%",
+      ],
     },
     fontFamily: {
       header: "Alata, sans-serif",
