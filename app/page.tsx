@@ -7,7 +7,11 @@ export default function Home() {
     <>
       <Header />
       <main className="bg-text-500">
-        <section className="bg-hero-mm mm:px-[20px] mm:pt-[181px] mm:pb-[56px] tablet:px-[32px] tablet:pb-[64px] tablet:pt-[120px] bg-center bg-cover">
+        <section
+          className="mm:bg-hero-mm tablet:bg-hero-tm desk:bg-hero-dm mm:px-[20px] mm:pt-[181px] mm:pb-[56px] 
+        tablet:px-[32px] tablet:pb-[64px] tablet:pt-[120px] bg-center bg-cover
+        desk:px-[80px] pb-[80px] pt-[106px]"
+        >
           <Hero />
         </section>
         <section className="bg-text-500" id="about"></section>
