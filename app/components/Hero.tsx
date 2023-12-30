@@ -49,7 +49,7 @@ const Hero = () => {
         </p>
         <Text
           text="We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!"
-          customStyle="tablet:mt-[56px] tablet:mb-[28px] desk:mt-auto"
+          customStyle="tablet:mt-[56px] tablet:mb-[28px] desk:mb-[28px] desk:mt-auto"
         ></Text>
         <Link
           className="uppercase text-center font-bold mm:py-[18px] tablet:py-[14px] desk:py-[16px] px-[64px] mm:text-[18px] leading-[48px] bg-[#FFFFFF19]
@@ -64,11 +64,3 @@ const Hero = () => {
 };
 
 export default Hero;
-/*
-width: 230px;
-padding: 14px 64px;
-
-
-width: 230px;
-padding: 16px 64px;
-*/

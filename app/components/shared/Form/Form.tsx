@@ -5,7 +5,7 @@ import { FieldValues, useForm } from "react-hook-form";
 import Notiflix from "notiflix";
 import { RxCross1 } from "react-icons/rx";
 import Label from "./Label";
-import SubmitBtn from "../submitBtn";
+import SubmitBtn from "../SubmitBtn";
 
 type FormData = {
   fullName: string;

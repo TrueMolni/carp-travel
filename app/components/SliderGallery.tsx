@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { register } from "swiper/element/bundle";
@@ -14,25 +13,8 @@ type SliderGalleryProps = {};
 register();
 
 const SliderGallery: React.FC<SliderGalleryProps> = () => {
-  const swiperElRef = useRef<Swiper | null>(null);
-
-  useEffect(() => {
-    if (swiperElRef.current) {
-      // Listen for Swiper events using addEventListener
-      swiperElRef.current.addEventListener("swiperprogress", (e) => {
-        const [swiper, progress] = e.detail;
-        console.log(progress);
-      });
-
-      swiperElRef.current.addEventListener("swiperslidechange", () => {
-        console.log("slide changed");
-      });
-    }
-  }, []);
-
   return (
     <Swiper
-      ref={swiperElRef}
       navigation
       pagination={{ type: "progressbar" }}
       modules={[Navigation, Pagination]}
@@ -59,6 +41,3 @@ const SliderGallery: React.FC<SliderGalleryProps> = () => {
 };
 
 export default SliderGallery;
-/*
-  
-*/
