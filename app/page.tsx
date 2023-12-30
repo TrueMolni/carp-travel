@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Carrer from "./components/Carrer";
 import Hero from "./components/Hero";
+import SliderGallery from "./components/SliderGallery";
 
 export default function Home() {
   return (
@@ -22,7 +23,9 @@ export default function Home() {
         >
           <Carrer />
         </section>
-        <section className="bg-text-500" id="gallery"></section>
+        <section className="bg-text-500" id="gallery">
+          <SliderGallery />
+        </section>
         <section className="bg-text-500" id="contacts"></section>
       </main>
     </>
