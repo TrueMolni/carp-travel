@@ -4,7 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { register } from "swiper/element/bundle";
 import "swiper/swiper-bundle.css";
-import "swiper/css/navigation";
+
+import SliderButton from "./shared/SliderButton";
 
 import { images } from "../components/shared/data/slidesData";
 
@@ -16,17 +17,18 @@ const SliderGallery: React.FC<SliderGalleryProps> = () => {
   return (
     <Swiper
       navigation
-      pagination={{ type: "progressbar" }}
+      // pagination={{ type: "progressbar" }}
       modules={[Navigation, Pagination]}
-      space-between="30"
+      space-between="24"
       centered-slides="true"
+      // slidesPerView="auto"
       autoplay-delay="2500"
       autoplay-disable-on-interaction="false"
       loop={true}
-      className="h-96 w-full rounded-lg"
+      className="h-[225px] w-[313px] rounded-lg"
     >
       {images.map(({ id, src, alt }) => (
-        <SwiperSlide key={id}>
+        <SwiperSlide className="" key={id}>
           <div className="flex h-full w-full items-center justify-center">
             <Image
               src={src}
@@ -36,6 +38,8 @@ const SliderGallery: React.FC<SliderGalleryProps> = () => {
           </div>
         </SwiperSlide>
       ))}
+      <SliderButton btnText="next" position="next" />
+      <SliderButton btnText="back" />
     </Swiper>
   );
 };
