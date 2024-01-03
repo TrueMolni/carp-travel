@@ -7,7 +7,7 @@ type textProps = {
 };
 
 const Text = ({ text, customStyle, children }: textProps) => {
-  const textStyle = "text-accent-500 font-extralight";
+  const textStyle = "text-accent-500 font-extralight m";
   return (
     <p className={!customStyle ? textStyle : customStyle + " " + textStyle}>
       {children}

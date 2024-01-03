@@ -17,12 +17,12 @@ const Hero = () => {
           title="
         Carpathian’s 
         Secrets"
-          customClass="flex flex-col-reverse mm:max-w-[280px] tablet:max-w-[426px] desk:max-w-[646px] tablet:mb-[68px] desk:mb-[148px]"
+          customClass="flex flex-col-reverse mm:max-w-[280px] tablet:max-w-[426px] desk:max-w-[646px] mm:mb-[24px] tablet:mb-[68px] desk:mb-[148px]"
         >
           <Span text="Uncover" />
         </Title>
         <Text
-          customStyle="mm:text-[10px] tm:leading-[16px] mm:max-w-[157px] tablet:w-[264px] tablet:text-[14px] tablet:tracking-[1.26px] desk:text-[16px] leading-[24px] tracking-[1.44px]"
+          customStyle="mm:text-[10px] tm:leading-[16px] mm:max-w-[210px] tablet:w-[264px] tablet:text-[14px] tablet:tracking-[1.26px] desk:text-[16px] leading-[24px] tracking-[1.44px]"
           text="Hoverla / Yaremche / Zakarpattia / Vorokhta / Synevyr Lake / Bukovel"
         />
       </div>
@@ -41,7 +41,7 @@ const Hero = () => {
             </span>
           </span>
           <span
-            className="text-right font-light mm:text-[12px] mm:leading-[15px] mm:tracking-[9.48px] tablet:text-[14px] tablet:leading-[17px] tablet:tracking-[25.9px] mm:mt-[-8px] tablet:mt-[-20px]
+            className="text-right font-light mm:text-[12px] mm:leading-[15px] mm:tracking-[9.48px] tablet:text-[14px] tablet:leading-[17px] tablet:tracking-[25.9px] mm:mt-[-32px] tablet:mt-[-20px]
           desk:text-[16px] desk:leading-[19px] desk:tracking-[36.48px] desk:mt-[-30px]"
           >
             JOURNEY
@@ -49,7 +49,7 @@ const Hero = () => {
         </p>
         <Text
           text="We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!"
-          customStyle="tablet:mt-[56px] tablet:mb-[28px] desk:mb-[28px] desk:mt-auto"
+          customStyle="mm:mb-[24px] tablet:mt-[56px] tablet:mb-[28px] desk:mb-[28px] desk:mt-auto tm:leading-[20px] desk:leading-[24px]"
         ></Text>
         <Link
           className="uppercase text-center font-bold mm:py-[18px] tablet:py-[14px] desk:py-[16px] px-[64px] mm:text-[18px] leading-[48px] bg-[#FFFFFF19]

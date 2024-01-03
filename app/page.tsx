@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Carrer from "./components/Carrer";
 import Hero from "./components/Hero";
 import Gallery from "./components/Gallery";
+import About from "./components/About";
 
 export default function Home() {
   return (
@@ -15,7 +16,12 @@ export default function Home() {
         >
           <Hero />
         </section>
-        <section className="bg-text-500" id="about"></section>
+        <section
+          className="bg-text-500 bg-about-mm mm:py-[54px] mm:px-[20px] tablet:px-[32px] tablet:py-[64px]"
+          id="about"
+        >
+          <About />
+        </section>
         <section className="bg-text-500" id="services"></section>
         <section
           className="mm:block flex flex-col items-center tablet:bg-career-tm desk:bg-career-tm mm:bg-none bg-center mm:px-[0px] mm:py-[0px] px-[32px] py-[64px] desk:p-[80px]"
