@@ -17,7 +17,7 @@ export default function Home() {
           <Hero />
         </section>
         <section
-          className="bg-text-500 bg-about-mm mm:py-[54px] mm:px-[20px] tablet:px-[32px] tablet:py-[64px]"
+          className="bg-text-500 bg-about-mm bg-cover mm:py-[54px] mm:px-[20px] tablet:px-[32px] tablet:py-[64px] desk:p-[80px]"
           id="about"
         >
           <About />
