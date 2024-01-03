@@ -39,7 +39,7 @@ const SliderGallery: React.FC<SliderGalleryProps> = () => {
         </SwiperSlide>
       ))}
       <SliderButton btnText="next" position="next" />
-      <SliderButton btnText="back" />
+      <SliderButton position="back" btnText="back" />
     </Swiper>
   );
 };
