@@ -36,6 +36,8 @@ const config: Config = {
         "linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('images/bg-hero-desktop.png')",
       "gallery-mm":
         "linear-gradient(#020F08D9, #020F08D9), url('images/bg-gallery.png')",
+      "about-mm":
+        "linear-gradient(rgba(2, 15, 8, 0.50), rgba(2, 15, 8, 0.50)), url('images/bg-about.png')",
     },
     backgroundColor: {
       black75: "rgba(2, 15, 8, 0.75)",
