@@ -30,7 +30,7 @@ export default function Home() {
           <Carrer />
         </section>
         <section
-          className="bg-text-500 bg-gallery-mm mm:px-[20px] mm:py-[56px] tablet:px-[32px] tablet:py-[64px]
+          className="bg-text-500 bg-gallery-mm bg-cover mm:px-[20px] mm:py-[56px] tablet:px-[32px] tablet:py-[64px]
           desk:px-[80px] desk:py-[80px]"
           id="gallery"
         >
