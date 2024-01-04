@@ -16,3 +16,49 @@ body {
   color: rgb(var(--foreground-rgb));
   font-weight: 400;
 }
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
+  top: 90% !important;
+  font-size: 33px !important;
+  font-weight: 100 !important;
+  cursor: pointer !important;
+}
+
+.swiper-button-prev {
+  left: 69px !important;
+  @media screen and (min-width: 1280px) {
+    left: 220px !important;
+  }
+}
+
+.swiper-button-next {
+  right: 69px !important;
+  @media screen and (min-width: 1280px) {
+    right: 135px !important;
+  }
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  width: 415px;
+  height: 294px;
+
+  @media screen and (min-width: 1280px) {
+    width: 600px;
+    height: 429px;
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}

@@ -18,4 +18,19 @@ export const images = [
     alt: "third",
     id: "3",
   },
+  {
+    src: first,
+    alt: "first",
+    id: "4",
+  },
+  {
+    src: second,
+    alt: "second",
+    id: "5",
+  },
+  {
+    src: third,
+    alt: "third",
+    id: "6",
+  },
 ];
